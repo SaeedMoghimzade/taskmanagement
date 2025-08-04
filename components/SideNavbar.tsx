@@ -91,7 +91,7 @@ const SideNavbar: React.FC<SideNavbarProps> = ({
          </div>
       </div>
 
-      <nav className="flex-1 flex flex-col gap-3 p-4">
+      <nav className="flex-1 flex flex-col gap-3 p-4 overflow-y-auto">
         <NavLink icon={<KanbanIcon />} label="کانبان" isActive={view === 'kanban'} isExpanded={isExpanded} onClick={() => setView('kanban')} />
         <NavLink icon={<TimelineIcon />} label="خط زمانی" isActive={view === 'timeline'} isExpanded={isExpanded} onClick={() => setView('timeline')} />
         <NavLink icon={<ChartBarIcon />} label="گزارش‌ها" isActive={view === 'reports'} isExpanded={isExpanded} onClick={() => setView('reports')} />
